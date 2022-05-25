@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr repeat(3, auto);
+}
+.header {
+  background-color: hsl(10deg 95% 68%);
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr repeat(3, auto);
+  background-color: hsl(78deg 10% 20%);
+  margin: 2rem;
+  padding: 7px 10px;
+  color: #e7e1dc;
+  gap: 10px;
+}
+.nav a {
+  text-decoration: none;
+  color: #e7e1dc;
+}
+.info {
+  display: grid;
+  background-color: hsl(78deg 10% 20%);
+  margin: 3rem;
+  place-items: start center;
+  padding: 0.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  gap: 10px;
+  color: #e7e1dc;
+}
+.info a {
+  text-decoration: none;
+  color: #59b9de;
+}
+.info h2 {
+  color: #fecf00;
+}
+
+.image_information {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 500px 1fr;
+  place-content: center;
+}
+.picture1 {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+}
+.picture1 img {
+  width: 100%;
+}
+
+.more {
+  display: grid;
+  place-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #5bc3eb;
+}
+.back-to-top {
+  background-color: hsl(78deg 10% 20%);
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+.back-to-top a {
+  text-decoration: none;
+  color: #e7e1dc;
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 1rem 6rem;
+  padding-left: 4rem;
+  background-color: #ede6e2;
+}
+.p {
+  display: grid;
+  grid-auto-flow: column;
+
+  gap: 20px;
+}
+.p1,
+.p2,
+.p3 {
+  border: 1px solid;
+  background-color: #f7f4f3;
+  padding: 5px 10px;
+  display: grid;
+  grid-template-rows: auto 6rem auto auto;
+  gap: 7px;
+}
+
+.p h5 {
+  color: #ef6144;
+}
+.swine-img {
+  background-image: url(./swinne.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.swine-img2 {
+  background-image: url(https://cdn.wallpapersafari.com/12/12/s9y1HD.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.swine-img3 {
+  background-image: url(https://i.stack.imgur.com/XM80p.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+.video {
+  background-color: aqua;
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  padding: 50px;
+  gap: 20px;
+}
+.video h4 {
+  justify-self: center;
+  color: rgb(54, 49, 49);
+}
+button a {
+  text-decoration: none;
+  color: #e7e1dc;
+}
+button {
+  background-color: #ef6144;
+  place-items: center;
+  border: none;
+  padding: 5px;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  padding: 2rem;
+}
+.experiences {
+  display: grid;
+  gap: 10px;
+}
+.exp1,
+.exp2,
+.exp3,
+.exp4 {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  background-color: #e7e1dc;
+  padding: 5px;
+  align-items: center;
+}
+.exp-image img {
+  width: 40px;
+}
+@media screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
